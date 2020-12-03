@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body>
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+            <div>
+                <header>
+                    <h1 id="title">Survey</h1>
+                    <p id="description">
+                        Survey description
+                    </p>
+                </header>
+            </div>
+            <body>
+                <form id="survey-form">
+                    <div>
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div>
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                    </div>
+                    <div>
+                        <label for="number" id="number-label">Age</label>
+                        <input type="number" name="age" id="number" min="18" max="99" placeholder="Enter your age">
+                    </div>
+                    <div>
+                        <p>Dropdown question</p>
+                        <select name="" id="dropdown" required>
+                            <option disabled selection value>Selector</option>
+                            <option value="option1">Option1</option>
+                            <option value="option2">Option2</option>
+                            <option value="option3">Option3</option>
+                            <option value="option4">Option4</option>
+                            <option value="option5">Option5</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>
+                            How likely is it that you recommend this product?
+                        </p>
+                        <label>
+                            <input type="radio" name="recommend" value="most-likely" checked>
+                            Most Likely
+                        </label>
+                        <label>
+                            <input type="radio" name="recommend" value="maybe">
+                            Maybe
+                        </label>
+                        <label>
+                            <input type="radio" name="recommend" value="least-likely">
+                            Least Likely
+                        </label>
+                    </div>
+                    <div>
+                        <p>
+                            Which of these products are you most interested in?
+                        </p>
+                        <label>
+                            <input type="checkbox" name="interest" value="product1">
+                            Product1
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="product2">
+                            Product2
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="product3">
+                            Product3
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interest" value="product4">
+                            Product4
+                        </label>
+                    </div>
+                    <div>
+                        <p>Any additional feedback?</p>
+                        <textarea name="comment" id="comments" placeholder="Enter your feedback here..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                </form>
+            </body>
+        </body>
+    </html> 
