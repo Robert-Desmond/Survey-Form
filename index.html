@@ -3,87 +3,94 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles.css">
         </head>
-        <body>
+        <body class="base-background">
             <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
             <div>
                 <header>
-                    <h1 id="title">Survey</h1>
+                    <h1 id="title">VaporWave Survey</h1>
                     <p id="description">
-                        Survey description
+                        Thank you for attributing to the genre!
                     </p>
                 </header>
             </div>
             <body>
-                <form id="survey-form">
-                    <div>
-                        <label for="name" id="name-label">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <form id="survey-form" class="survey-form text-left">
+                    <div class="form-group">
+                        <label class="text-left" for="name" id="name-label">Name:</label>
+                        <br>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name" required>
                     </div>
-                    <div>
-                        <label for="email" id="email-label">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                    <div class="form-group">
+                        <label for="email" id="email-label">Email:</label>
+                        <br>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Enter your Email" required>
                     </div>
-                    <div>
-                        <label for="number" id="number-label">Age</label>
-                        <input type="number" name="age" id="number" min="18" max="99" placeholder="Enter your age">
+                    <div class="form-group">
+                        <label for="number" id="number-label">Age (optional):</label>
+                        <br>
+                        <input class="form-control" type="number" name="age" id="number" min="18" max="99" placeholder="Enter your age">
                     </div>
-                    <div>
-                        <p>Dropdown question</p>
-                        <select name="" id="dropdown" required>
+                    <div class="form-group">
+                        <p>Best sub-genre of VaporWave</p>
+                        <select class="form-control" name="" id="dropdown" required>
                             <option disabled selection value>Selector</option>
-                            <option value="option1">Option1</option>
-                            <option value="option2">Option2</option>
-                            <option value="option3">Option3</option>
-                            <option value="option4">Option4</option>
-                            <option value="option5">Option5</option>
+                            <option value="option1">Mallsoft</option>
+                            <option value="option2">Future Funk</option>
+                            <option value="option3">Eco Jams </option>
+                            <option value="option4">VHS Pop</option>
+                            <option value="option5">VaporTrap</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="form-group">
                         <p>
-                            How likely is it that you recommend this product?
+                            How often do you listen to this type of music?
                         </p>
                         <label>
                             <input type="radio" name="recommend" value="most-likely" checked>
-                            Most Likely
+                            Very Often
                         </label>
                         <label>
                             <input type="radio" name="recommend" value="maybe">
-                            Maybe
+                            Sometimes
                         </label>
                         <label>
                             <input type="radio" name="recommend" value="least-likely">
-                            Least Likely
+                            Not Often
                         </label>
                     </div>
-                    <div>
+                    <div class="form-group">
                         <p>
-                            Which of these products are you most interested in?
+                            Which of these artists are you most interested in?
                         </p>
                         <label>
                             <input type="checkbox" name="interest" value="product1">
-                            Product1
+                            Blank Banshee
                         </label>
+                        <br>
                         <label>
                             <input type="checkbox" name="interest" value="product2">
-                            Product2
+                            Windows96
                         </label>
+                        <br>
                         <label>
                             <input type="checkbox" name="interest" value="product3">
-                            Product3
+                            Nmesh
                         </label>
+                        <br>
                         <label>
                             <input type="checkbox" name="interest" value="product4">
-                            Product4
+                            VHS LOGOS
                         </label>
                     </div>
-                    <div>
+                    <div class="form-group">
                         <p>Any additional feedback?</p>
-                        <textarea name="comment" id="comments" placeholder="Enter your feedback here..."></textarea>
+                        <textarea class="textarea" name="comment" id="comments" placeholder="Enter your feedback here..."></textarea>
                     </div>
-                    <div>
-                        <button type="submit" id="submit">Submit</button>
+                    <div class="form-group">
+                        <button class="submit-button" type="submit" id="submit">Submit</button>
                     </div>
                 </form>
             </body>

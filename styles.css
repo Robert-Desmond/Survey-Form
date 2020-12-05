@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "MONO";
+    src: url(Fonts/VCR_OSD_MONO_1.001.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "MONO";
+    text-align: center;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.base-background {
+    background-image: linear-gradient(-45deg, #b252a1, #66a1d2 80%);
+}
+
+  .survey-form {
+      background-color: rgba(240, 255, 255, 30%);
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      border-radius: 15px;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+  .submit-button {
+    font-size: 2em;
+    width: 60%;
+    align-self: center;
+    padding: 0.75rem;
+    background: #05ffa1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.textarea {
+    min-height: 150px;
+    text-align: left;
+    font-size: large;
+    width: 80%;
+    padding: ;
+    resize: vertical;
+}
+
+.form-control {
+    width: 80%;
+    align-self: center;
+    height: 2rem;
+    padding: 0.400rem 0.75rem;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.text-left {
+    text-align: left;
+}
